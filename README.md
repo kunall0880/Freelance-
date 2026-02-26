@@ -2,7 +2,12 @@
 
 We have tried to make a **blockchain-based decentralised web application (DApp)** that allows freelancers and recruiters (clients) to connect on projects with built-in escrow. The recruiter (client) can put their project ideas and set the guidelines for the same. The freelancer can browse through the available projects on the platform and apply for the ones they are interested in. The freelancer will have to upload their files as a proof of work for each milestone that is set by the client.
 
-## Unique Selling Point: 
+# Delance: A Decentralised Freelancing Platform
+
+This is a blockchain-based decentralised DApp that connects freelancers and clients with
+built-in escrow, automated ratings, and decentralized arbitration.
+
+ 
 The existing platforms don't have an **automated rating system**. Our platform automates the rating system so as to **prevent ratings being abused by malicious actors**.
 There also does not exist a comprehensive solution which automates the entire workflow and integrates it with **decentralized arbitration** as we have done. 
 The files are also uploaded on **IPFS** making them available as an **immutable proof** for the arbitrators. We have also **automated the payment of funds** after acceptance of proof of work for each milestone via **escrow contracts**.
@@ -264,6 +269,22 @@ private data.
 - [Ganache CLI](https://www.trufflesuite.com/ganache)
 - [MetaMask custom RPC guide](https://metamask.io/faqs/#c6)
 
+## References
+
+This project is based on the original
+[Delance](https://github.com/kunall0880/Freelance-) repository by @kunall0880.
+The current setup focuses on **local development with Ganache** to avoid testnet
+gas fees and enable rapid iteration.
+
+**Key Changes for Local Development:**
+- Dynamic contract address resolution from build artifacts
+- Ganache network configuration (chain ID 1337)
+- Automated npm scripts for `ganache`, `migrate:dev`, and `test:dev`
+- Enhanced troubleshooting and MetaMask setup guidance
+
+For the complete feature set and original design, see the
+[original repository](https://github.com/kunall0880/Freelance-).
+
 Happy hacking! Feel free to file issues or pull requests in this repo if you
 want to refine the setup or add automation.  
 
@@ -285,8 +306,5 @@ want to refine the setup or add automation.
    - If the freelancer's submission is upheld, funds are released to the freelancer.
 3. **Automatic Rating Adjustment**:
    - Ratings for both the client and freelancer are updated based on the arbitration outcome, influencing each party’s reputation on the platform.
-
-
-
 
 
